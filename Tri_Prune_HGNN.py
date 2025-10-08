@@ -1,5 +1,5 @@
 # =============================================================================
-# COMPLETE CORRECT IMPLEMENTATION: TriPrune-HGNN Framework
+# TriPrune-HGNN Framework
 # =============================================================================
 
 import os
@@ -20,7 +20,7 @@ import time
 warnings.filterwarnings('ignore')
 
 # =============================================================================
-# Data Processing (Keep existing - it works)
+# Data Processing 
 # =============================================================================
 
 def process_data(folder_path):
@@ -79,7 +79,7 @@ def process_data(folder_path):
     return ground_truth_ratings, genre_id_mapping
 
 # =============================================================================
-# Hypergraph Constructor (Keep existing - it works)
+# Hypergraph Constructor 
 # =============================================================================
 
 class HypergraphConstructor:
@@ -237,7 +237,7 @@ class HypergraphConstructor:
         return incidence_matrices, node_mappings
 
 # =============================================================================
-# CORRECT IMPLEMENTATION: Hierarchical Triple Dynamic Pruning (Section 3.1)
+# Hierarchical Triple Dynamic Pruning (Section 3.1)
 # =============================================================================
 
 class HierarchicalTripleDynamicPruning(nn.Module):
@@ -618,7 +618,7 @@ class HierarchicalTripleDynamicPruning(nn.Module):
         return pruning_results
 
 # =============================================================================
-# CORRECT IMPLEMENTATION: Pruning-Aware Contrastive Learning (Section 3.2)
+# Pruning-Aware Contrastive Learning (Section 3.2)
 # =============================================================================
 
 class PruningAwareContrastiveLearning(nn.Module):
@@ -981,7 +981,7 @@ class PruningAwareContrastiveLearning(nn.Module):
         return total_loss, loss_components
 
 # =============================================================================
-# CORRECT IMPLEMENTATION: Complete TriPrune-HGNN Framework
+# Complete TriPrune-HGNN Framework
 # =============================================================================
 
 class TriPruneHGNN_Complete(nn.Module):
@@ -1531,4 +1531,5 @@ def main():
     return results
 
 if __name__ == "__main__":
+
     results = main()
